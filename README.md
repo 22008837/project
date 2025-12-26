@@ -1,6 +1,7 @@
 ## Smart Wastewater pH Monitoring and Alert System
 
 Small Description:
+
 The Smart Wastewater pH Monitoring and Alert System is designed to continuously monitor the pH level of wastewater in real time and provide instant alerts when abnormal conditions are detected, ensuring environmental safety and efficient water management.
 
 ## About
