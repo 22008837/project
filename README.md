@@ -36,18 +36,7 @@ User-friendly dashboard for visualization of pH data
 <img width="202" height="363" alt="image" src="https://github.com/user-attachments/assets/e0af40d3-29bc-44cb-9dcf-715600cb1c75" />
 
 ## Output
-
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
-
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
-
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
-
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
-
+<img width="1600" height="794" alt="image" src="https://github.com/user-attachments/assets/e2586aaf-e965-438e-9867-66e7de486a6f" />
 
 ## Results and Impact
 The Smart Wastewater pH Monitoring and Alert System significantly improves the efficiency of wastewater quality management by providing continuous and automated monitoring. It reduces dependency on manual testing and enables faster detection of hazardous conditions.
