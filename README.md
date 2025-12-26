@@ -32,10 +32,7 @@ User-friendly dashboard for visualization of pH data
 * Communication Modules: Wi-Fi / GSM for data transmission
 
 ## System Architecture
-<!--Embed the system architecture diagram as shown below-->
-
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
-
+<img width="202" height="363" alt="image" src="https://github.com/user-attachments/assets/e0af40d3-29bc-44cb-9dcf-715600cb1c75" />
 
 ## Output
 
