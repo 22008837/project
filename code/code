@@ -1,0 +1,29 @@
+#define PH_PIN 36   // P0 connected to GPIO 36
+
+float voltage;
+float pHValue;
+
+void setup() {
+  Serial.begin(9600);
+  analogReadResolution(12);   // ESP32 ADC resolution (0–4095)
+  delay(1000);
+}
+
+void loop() {
+  int adcValue = analogRead(PH_PIN);
+
+  // Convert ADC value to voltage (0–3.3V)
+  voltage = adcValue * (3.3 / 4095.0);
+
+  // Basic pH calculation (approximate)
+  pHValue = 7 + (2.5 - voltage) * 3.5;
+
+  Serial.print("ADC Value: ");
+  Serial.print(adcValue);
+  Serial.print(" | Voltage: ");
+  Serial.print(voltage, 2);
+  Serial.print(" V | pH Value: ");
+  Serial.println(pHValue, 2);
+
+  delay(1000);
+}
