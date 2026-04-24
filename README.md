@@ -43,9 +43,7 @@ The system detects abnormal pH values and notifies authorities through alerts, e
 ---
 
 ## System Architecture
-
-![System Architecture](img/system_architecture.png)
-
+[Architecture](./Architecture/system_architecture.md)
 ---
 
 ## Input
