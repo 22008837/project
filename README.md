@@ -71,17 +71,9 @@ The following images show the **hardware components and physical setup** used as
 
 ---
 
-### Arduino IDE — Code & Configuration
+### Arduino IDE — Code 
 
-![Arduino Code - Blynk Credentials](img/input_arduino_code_blynk.jpeg)
-
-> The sketch configured with `BLYNK_TEMPLATE_ID`, `BLYNK_TEMPLATE_NAME`, `BLYNK_AUTH_TOKEN`, Wi-Fi SSID/password, and pH sensor on **PIN 35**.
-
-![Arduino Code - pH Calculation Logic](img/input_arduino_code_logic.jpeg)
-
-> The `sendData()` function reads the ADC value, converts it to voltage, computes the pH using the calibration formula:
-> `pH = 7 + ((2.5 - voltage) / 0.18)`
-> and sends the result to Blynk virtual pins V0 and V1.
+-  [Code](code/code.ino)
 
 ---
 
