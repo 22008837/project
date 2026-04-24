@@ -41,9 +41,13 @@ The system detects abnormal pH values and notifies authorities through alerts, e
 - **Communication:** Wi-Fi (ESP32 built-in)
 
 ---
+## Project Documentation
 
-## System Architecture
-[Architecture](./Architecture/system_architecture.md)
+Detailed project documentation is available below:
+
+-  [Components List](Hardware/Components.md)
+-  [Hardware Connections](Hardware/Hardware_connection.md)
+-  [System Architecture](Architecture/System_architecture.md)
 ---
 
 ## Input
@@ -52,7 +56,7 @@ The following images show the **hardware components and physical setup** used as
 
 ### ESP32 Dev Board Pinout
 
-![ESP32 Pinout](img/input_esp32_pinout.jpeg)
+<img width="727" height="508" alt="input_esp32_pinout jpeg" src="https://github.com/user-attachments/assets/5865a279-d284-4407-9524-de28128622db" />
 
 > The ESP32 Dev Module used in this project. The pH sensor analog output is connected to **GPIO35** (ADC input pin).
 
@@ -60,11 +64,10 @@ The following images show the **hardware components and physical setup** used as
 
 ### Hardware Setup — pH Sensor in Water
 
-![Hardware Setup 1](img/input_hardware_setup_1.jpeg)
+<img width="960" height="1280" alt="input_hardware_setup_2 jpeg" src="https://github.com/user-attachments/assets/537ef93b-427c-42f7-8a21-32ee53e4cb0b" />
+<img width="960" height="1280" alt="input_hardware_setup_1 jpeg" src="https://github.com/user-attachments/assets/ebc88c7f-b676-49e1-b068-6121d67be0f8" />
 
-![Hardware Setup 2](img/input_hardware_setup_2.jpeg)
-
-> The pH sensor probe is submerged in the wastewater sample (shown in the blue bowl). The ESP32 (red board, left) reads the analog voltage from the pH sensor module (green board, right) and processes it.
+> The pH sensor probe is submerged in the wastewater sample and normal water (shown in the blue bowl). The ESP32 (red board, left) reads the analog voltage from the pH sensor module (green board, right) and processes it.
 
 ---
 
@@ -88,26 +91,28 @@ The following images show the **system outputs** — serial monitor readings and
 
 ### Serial Monitor — pH Readings
 
-![Serial Monitor - Acidic Reading](img/output_serial_acidic.jpeg)
+<img width="1600" height="900" alt="output_serial_acidic jpeg" src="https://github.com/user-attachments/assets/dcd8f5b7-9188-4071-a198-32c190654e42" />
 
-> Serial Monitor showing readings when the sensor is in air / without calibration fluid:
-> `ADC: 4095 | Voltage: 3.30 | pH: 2.56 | Required ml: 22.22`
+> Serial Monitor showing readings when the sensor is in acidic water:
+> `ADC: 4095 | Voltage: 3.30 | pH: 2.56 
 
-![Serial Monitor - Alkaline Reading](img/output_serial_alkaline.jpeg)
+<img width="1600" height="900" alt="output_serial_alkaline jpeg" src="https://github.com/user-attachments/assets/fd7fe645-5998-4544-bb45-56bfc3ade8dd" />
 
-> Serial Monitor showing readings when the probe is in soapy water:
-> `ADC: ~2550 | Voltage: ~2.06 | pH: ~9.43 | Required ml: 0.00`
+> Serial Monitor showing readings when the probe is in alkaline water:
+> `ADC: ~2550 | Voltage: ~2.06 | pH: ~9.43 `
 
-![Serial Monitor - Neutral/Transition](img/output_serial_transition.jpeg)
+<img width="1600" height="900" alt="output_serial_neutral jpeg" src="https://github.com/user-attachments/assets/d3eda8bd-5817-429d-bcf2-be995f7b2973" />
 
-> Serial Monitor showing pH transitioning through neutral range (~7.87 to ~8.71) as conditions change.
+> Serial Monitor showing pH transitioning through neutral range as conditions change.
 
 ---
 
 ### Blynk App — pH Alert Notification
 
-![Blynk Alert](img/output_blynk_alert.jpeg)
+<img width="625" height="1280" alt="output_blynk_alert jpeg" src="https://github.com/user-attachments/assets/c45a57e4-cc2f-4896-b189-cefc61d62803" />
 
+
+>
 > The Blynk mobile app displaying a push notification alert:
 > **"⚠️ ALERT: pH level is unsafe!"**
 > This is triggered automatically when the pH reading goes outside the safe range (below 6.5 or above 8.5).
